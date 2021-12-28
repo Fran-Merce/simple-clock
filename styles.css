@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #FC5C7D;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6A82FB), to(#FC5C7D));
+  background: linear-gradient(to right, #6A82FB, #FC5C7D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(https://images.hdqwalls.com/download/anime-girl-moescape-alone-standing-4k-nz-1920x1080.jpg);
+  background-image: url(lofi-cafe-Asian-digital-art-artwork-digital-1973715-wallhere.com.jpg);
+}
+
+.bg {
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.clock {
+  width: 350px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(https://www.freeiconspng.com/thumbs/roman-numerals-png/roman-numerals-clock-png-6.png);
+  background-size: cover;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.412);
+  border: 2px solid rgba(255, 255, 255, 0.693);
+}
+
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.clock .hour, .clock .min, .clock .sec {
+  position: absolute;
+}
+
+.clock .hour, .clock .hr {
+  width: 160px;
+  height: 160px;
+}
+
+.clock .min, .clock .mn {
+  width: 190px;
+  height: 160px;
+}
+
+.clock .sec, .clock .sc {
+  width: 230px;
+  height: 230px;
+}
+
+.clock .hr, .clock .mn, .clock .sc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+}
+
+.clock .hr span {
+  position: absolute;
+  width: 8px;
+  height: 80px;
+  background-color: #000000;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+
+.clock .mn span {
+  position: absolute;
+  width: 4px;
+  height: 90px;
+  background-color: #ffffff;
+  z-index: 11;
+  border-radius: 10px;
+}
+
+.clock .sc span {
+  position: absolute;
+  width: 2px;
+  height: 150px;
+  background-color: #ff0033;
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
+}
+
+.digital-clock-container {
+  text-align: center;
+}
+
+.digital-clock-container .digital-time {
+  font-size: 2rem;
+  color: white;
+  width: 100%;
+  margin-bottom: 0.7rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+.digital-clock-container .date {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: white;
+  font-family: 'Dancing Script', cursive;
+}
+/*# sourceMappingURL=styles.css.map */
