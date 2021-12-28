@@ -27,19 +27,14 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(#6A82FB), to(#FC5C7D));
   background: linear-gradient(to right, #6A82FB, #FC5C7D);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-image: url(https://images.hdqwalls.com/download/anime-girl-moescape-alone-standing-4k-nz-1920x1080.jpg);
   background-image: url(lofi-cafe-Asian-digital-art-artwork-digital-1973715-wallhere.com.jpg);
 }
 
-.bg {
-  /* From https://css.glass */
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.8px);
-  -webkit-backdrop-filter: blur(4.8px);
-  border: 1px solid rgba(0, 0, 0, 0.2);
+.btn-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2em;
 }
 
 .clock {
@@ -57,7 +52,7 @@ body {
   background: url(https://www.freeiconspng.com/thumbs/roman-numerals-png/roman-numerals-clock-png-6.png);
   background-size: cover;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.412);
+  background-color: rgba(255, 255, 255, 0.254);
   border: 2px solid rgba(255, 255, 255, 0.693);
 }
 
@@ -144,5 +139,81 @@ body {
   text-transform: capitalize;
   color: white;
   font-family: 'Dancing Script', cursive;
+}
+
+.btn-toggle {
+  width: 300px;
+  height: 30px;
+}
+
+.btn-toggle:checked {
+  background-color: red;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 /*# sourceMappingURL=styles.css.map */
